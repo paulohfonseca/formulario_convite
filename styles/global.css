@@ -17,6 +17,7 @@
 
     --danger: #FF5959;
 
+    --background: #1e1e1e;
     --input-base: #1c1f21;
     --input-stroke: #363b40;
     --input-placeholder: #869198;
@@ -32,11 +33,23 @@
     --font-Open: "Open Sans", sans-serif;
     --font-Baloo2: "Baloo 2", sans-serif;
     
-    --logo: 400 4rem/auto var(--font-leckerli);
-    --heading-md: 700 2.8rem/auto var(--font-Baloo2);
-    --heading-sm: 700 1.8rem/auto var(--font-Baloo2);
+    --logo: 400 4rem var(--font-leckerli);
+    --heading-md: 700 2.8rem var(--font-Baloo2);
+    --heading-sm: 700 1.8rem var(--font-Baloo2);
 
-    --body-md: 600 1.6rem/auto var(--font-Open);
-    --body-sm: 600 1.4rem/auto var(--font-Open);
-    --body-xs: 600 1.2rem/auto var(--font-Open);
+    --body-md: 400 1.6rem var(--font-Open);
+    --body-sm: 400 1.4rem var(--font-Open);
+    --body-xs: 400 1.2rem var(--font-Open);
+}
+
+body {
+    background-color: var(--background);
+}
+
+.flex {
+    display: flex;    
+}
+
+.flex-1 {
+    flex: 1;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,24 +14,89 @@
 </head>
 <body>
     <div id="app">
+        <!--
         <aside>
-            <div class="aside-container">
-                <header>
-                    <img src="./assets/Logo.svg" alt="logo">
+            <header>
+                <img src="./assets/Logo.svg" alt="logo">
 
-                    <h1>Festivite</h1>
+                <h1>Festivite</h1>
 
-                    <p>Crie um convite digital para o seu evento</p>
-                </header>
-                
-                <img class="wallpaper" src="./assets/cake.png" alt="Foto de um pedaço de bolo de aniversário">
-            </div>
+                <p>Crie um convite digital para o seu evento</p>
+            </header>
         </aside>
-
+-->
         <main>
-            <div class="main-container"></div>
-        </main>
-    </div>
-    
+            <h1>Crie seu convite</h1>
+
+            <form action="post" enctype="multipart/form-data">
+                <fieldset class="about-event">
+                    <legend>
+                        <img src="./assets/icons/calendar.svg" alt="ícone de calendário"/>
+                        
+                        Sobre o evento
+                    </legend>
+
+                    <div class="input-wrapper">
+                        <label for="event-title">Título</label>
+                        <input type="text" id="event-title" name="event-title" placeholder="Nome do evento">
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-wrapper">
+                            <label for="start-date">Início</label>
+                            <input type="datetime-local" id="start-date" lang="pt-BR">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="end-date">Fim</label>
+                            <input type="datetime-local" id="end-date" lang="pt-BR">
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-wrapper flex-1">
+                            <label for="event-type">Tipo</label>
+                            <div class="event-type">
+                                <button id="in-person">
+                                    <img src="./assets/icons/building-2.svg" alt="ícone de um prédio">
+                                    
+                                    Presencial
+                                </button>
+                                <button id="online">
+                                    <img src="./assets/icons/video.svg" alt="ícone de uma câmera">
+
+                                    Online
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper flex-1">
+                            <label for="address">Local</label>
+                            <input type="text" name="address" id="address" placeholder="Link ou endereço">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="description">Descrição</label>
+                        <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="customization">
+                    <legend>
+                        <img src="./assets/icons/paintbrush-vertical.svg" alt="ícone de pincel">
+
+                        Personalização
+                    </legend>
+
+                    <div class="flex">
+                        <div class="container-radio">
+
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </main>        
+    </div>  
 </body>
 </html>

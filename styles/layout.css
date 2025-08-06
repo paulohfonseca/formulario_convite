@@ -1,47 +1,58 @@
 #app {
     display: grid;
-    grid-template-columns: 31.25% 68.75%;
+    /* grid-template-columns: 31.25% 68.75%; */
+    column-gap: 2rem;
+    background-color: var(--background);
+
+    margin: 2rem;
 
     height: 100vh;
     overflow: hidden;
 }
 
-body {
-    background-color: var( --shape-background);
-    padding: 2rem;
-
-    overflow: hidden;
-}
-
 aside {
-    .aside-container {
-        position: relative;
-        
-        header {
-            padding: 3.2rem;
+    margin-left: auto;
+    background-image: url(../assets/cake.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-            h1 {
-                font: var(--logo);
-                color: var(--pink);
+    border-radius: 1.2rem;
 
-                margin: 1.6rem 0 0.4rem;
-            }   
-            
-            p {
-                font: var(--body-md);
-                color: var(--text-heading);
-            }
+    width: 40rem;
+    height: 72.8rem;
+
+    header {
+        padding: 3.2rem;
+
+        img {
+            margin-bottom: 1.6rem;
         }
-        
-        .wallpaper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -999;
-            object-fit: contain;
-            
-            border-radius: 1.2rem; 
+
+        h1 {
+            font: var(--logo);
+            /* font: 400 4rem var(--font-leckerli); */
+            color: var(--pink);
+        }
+
+        p {
+            font: var(--body-md);
+            font-weight: 100;
+            color: var(--text-heading);
         }
     }
-    
+}
+
+main {
+    overflow: auto;
+    width: 98%;
+    background-color: var(--shape-body);
+    border-radius: 1.2rem;
+
+    padding: 8rem 13rem;
+
+    h1 {
+        font: var(--heading-md);
+        color: var(--text-heading);
+        margin-bottom: 4rem;
+    }
 }
