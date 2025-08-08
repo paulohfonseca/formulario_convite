@@ -15,7 +15,7 @@ legend + .input-wrapper {
         font: var(--body-sm);
     }
 
-    input, textarea {
+    input:not([type="radio"]), textarea {
         width: 100%;
         appearance: none;
         padding: 1.6rem 1.3rem;
@@ -31,6 +31,11 @@ legend + .input-wrapper {
         height: 13rem;
 
         font: var(--body-md);
+    }
+
+    input:not([type="radio"]):focus-within,
+    textarea:focus-within {
+        outline: 1px solid var(--brand-light);
     }
 }
 

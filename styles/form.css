@@ -1,4 +1,5 @@
 @import url(fields/input.css);
+@import url(fields/radio.css);
 
 form {
     fieldset {

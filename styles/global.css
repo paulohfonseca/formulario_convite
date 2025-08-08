@@ -14,6 +14,12 @@
     --purple: #B259FF;
     --fuschia: #FF59F9;
     --pink: #FF598B;
+    --orange: #ff8b59;
+    --yellow: #ffcf59;
+    --lime: #e1ff59;
+    --green: #59ff91;
+    --cyan: #59fff9;
+    --navy: #6a59ff;
 
     --danger: #FF5959;
 
@@ -52,4 +58,8 @@ body {
 
 .flex-1 {
     flex: 1;
+}
+
+.gap-16 {
+    gap: 1.6rem;
 }

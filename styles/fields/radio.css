@@ -1,0 +1,84 @@
+.container-radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    width: 4rem;
+    height: 4rem;
+    
+    border-radius: 50%;
+
+    background-color: var(--shape-button);
+    
+    &:hover, &:focus-within{
+        background-color: var(--shape-hover);
+    }
+
+    &:has(:checked) {
+        outline: 3px solid var(--brand-light);
+    }
+
+    .color-radio {
+        width: 3rem;
+        height: 3rem;
+    
+        border-radius: 50%;
+
+        input, input:hover, input:focus {
+            position: absolute;
+            appearance: none;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+.color1 {
+    background-color: var(--brand-light);
+}
+
+.color2 {
+   background-color: var(--navy);
+}
+
+.color3 {
+    background-color: var(--purple);
+}
+
+.color4 {
+    background-color: var(--fuschia);
+}
+
+.color5 {
+    background-color: var(--pink);
+}
+
+.color6 {
+    background-color: var(--danger);
+}
+
+.color7 {
+    background-color: var(--orange);
+}
+
+.color8 {
+    background-color: var(--yellow);
+}
+
+.color9 {
+    background-color: var(--lime);
+}
+
+.color10 {
+    background-color: var(--green);
+}
+
+.color11 {
+    background-color: var(--cyan);
+}
